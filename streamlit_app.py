@@ -1,6 +1,6 @@
 import datetime
 import random
-
+import matplotlib as plt
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -31,9 +31,21 @@ def load_data(url):
 df = load_data(
     "data/visual1.csv")
 st.dataframe(df)
+# Generate data
 
-arr = np.random.normal(1, 1, size=100)
+# Set the title of the app
+st.title('Matplotlib with Streamlit Example')
+
+# Generate data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create a Matplotlib figure
 fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
+ax.plot(x, y)
+ax.set_title('Sine Wave')
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
 
+# Display the plot in Streamlit
 st.pyplot(fig)
