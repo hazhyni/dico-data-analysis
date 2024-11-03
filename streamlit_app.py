@@ -41,19 +41,3 @@ df = load_data(
 st.dataframe(df)
 # Generate data
 
-# Set the title of the app
-st.title('Matplotlib with Streamlit Example')
-
-# Generate data
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-
-# Create a Matplotlib figure
-fig, ax = plt.subplots()
-ax.plot(x, y)
-ax.set_title('Sine Wave')
-ax.set_xlabel('X-axis')
-ax.set_ylabel('Y-axis')
-
-# Display the plot in Streamlit
-st.pyplot(fig)
