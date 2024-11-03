@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import datetime
 import random
 
@@ -29,6 +30,11 @@ def load_data(url):
     return df
 
 df = load_data(
-    "data/orders_dataset.csv")
+    "data/visual1.csv")
 st.dataframe(df)
 
+arr = np.random.normal(1, 1, size=100)
+fig, ax = plt.subplots()
+ax.hist(arr, bins=20)
+
+st.pyplot(fig)
