@@ -29,8 +29,7 @@ add_selectbox = st.sidebar.selectbox(
 st.header("Sales Trend Over Time")
 st.write(f"Data Required: `orders.csv`, `order_items.csv`, `order_payments.csv`, `order_reviews.csv`, `products.csv`, `sellers.csv`, `customers.csv`, `geolocation")
 st.info(
-    "As a analyst, We need to know more about sales trends and their total revenue to make the right decisions.",
-    "Here's our clean and structured data to analyze.")
+    "As a analyst, We need to know more about sales trends and their total revenue to make the right decisions. Here's our clean and structured data to analyze.")
 
 def load_data(url):
     df = pd.read_csv(url)  # 👈 Download the data
