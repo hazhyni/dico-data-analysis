@@ -39,4 +39,7 @@ df = load_data(
     "data/visual1.csv")
 st.dataframe(df)
 # Generate data
-
+chart_data = pd.DataFrame({
+                          "Harga": df["price"],
+                          "Tahun": df["order_id"]})
+st.line_chart(chart_data, x="Tahun", y="Harga")
