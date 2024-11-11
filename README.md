@@ -1,6 +1,11 @@
-# 🎫 Support tickets template
+#  Brazilian E-Commerce Public Dataset Data Analysis  
 
-A simple Streamlit app showing an internal tool that lets you create, manage, and visualize support tickets. 
+Dataset: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+
+Welcome to Hazhiyah Yumni's Data Analysis X Dicoding Indonesia! This App will help you to know business improvement according to the data provided.
+
+A simple Streamlit app showing an internal tool that lets you create, manage, and visualize business analysis. 
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://support-tickets-template.streamlit.app/)
 
