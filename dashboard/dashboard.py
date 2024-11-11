@@ -29,7 +29,7 @@ add_selectbox = st.sidebar.selectbox(
 st.header("Sales Trend Over Time")
 st.write(f"Data Required: `orders.csv`, `order_items.csv`, `order_payments.csv`, `order_reviews.csv`, `products.csv`, `sellers.csv`, `customers.csv`, `geolocation")
 st.info(
-    "As a analyst, We need to know more about sales trends and their total revenue to make the right decisions. Here's our clean and structured data to analyze.")
+    "As an analyst, We need to know more about sales trends and their total revenue to make the right decisions. Here's our clean and structured data to analyze.")
 
 
 def load_data(url):
@@ -43,5 +43,5 @@ st.dataframe(df)
 # Generate data
 chart_data = pd.DataFrame({
                           "Harga": df["price"],
-                          "Tahun": df["order_id"]})
+                          "Tahun": df["order_purchase_timestamp"]})
 st.line_chart(chart_data, x="Tahun", y="Harga")
